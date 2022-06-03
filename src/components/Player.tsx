@@ -42,7 +42,7 @@ const PlayerComponent = ({ player, setIsShowingDetail }: PropTypes) => {
       actions={
         <ActionPanel title="Player Actions">
           <Action title="Show Player Info" icon={Icon.Sidebar} onAction={() => setIsShowingDetail(true)} />
-          <Action.OpenInBrowser title="View Player On ESPN" url={player.link} />
+          <Action.OpenInBrowser title="View Player on ESPN" url={player.link} />
         </ActionPanel>
       }
     />

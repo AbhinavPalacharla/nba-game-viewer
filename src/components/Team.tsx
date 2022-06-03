@@ -16,7 +16,7 @@ const TeamComponent = ({ team }: PropTypes) => {
       actions={
         <ActionPanel>
           <Action.Push title="View Roster" icon={Icon.Person} target={<Roster id={team.id} />} />
-          <Action.OpenInBrowser title="View Team On ESPN" url={team.link} />
+          <Action.OpenInBrowser title="View Team on ESPN" url={team.link} />
         </ActionPanel>
       }
     />

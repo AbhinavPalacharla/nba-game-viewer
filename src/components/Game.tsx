@@ -15,7 +15,7 @@ const GameComponent = ({ game }: PropTypes) => {
       accessories={generateGameAccessories(game)}
       actions={
         <ActionPanel>
-          <Action.OpenInBrowser url={game.stream} title="View Game Details On ESPN" icon={Icon.Globe} />
+          <Action.OpenInBrowser url={game.stream} title="View Game Details on ESPN" icon={Icon.Globe} />
         </ActionPanel>
       }
     />
