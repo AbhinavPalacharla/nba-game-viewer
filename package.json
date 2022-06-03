@@ -14,12 +14,14 @@
       "name": "upcoming-games",
       "title": "View Upcoming Games",
       "description": "Fetches upcoming NBA games",
+      "subtitle": "NBA",
       "mode": "view"
     },
     {
       "name": "standings",
       "title": "View Standings",
       "description": "Fetches NBA standings",
+      "subtitle": "NBA",
       "mode": "view"
     }
   ],
