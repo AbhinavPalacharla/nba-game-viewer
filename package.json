@@ -23,6 +23,13 @@
       "description": "Fetches NBA standings",
       "subtitle": "NBA",
       "mode": "view"
+    },
+    {
+      "name": "news",
+      "title": "View News",
+      "description": "Fetches NBA league news from ESPN",
+      "subtitle": "NBA",
+      "mode": "view"
     }
   ],
   "dependencies": {

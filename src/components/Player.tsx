@@ -5,7 +5,7 @@ import generatePlayerAccessories from "../utils/generatePlayerAccessories";
 type PropTypes = {
   player: Player;
   isShowingDetail: boolean;
-  setIsShowingDetail: any;
+  setIsShowingDetail: Function;
 };
 
 const PlayerComponent = ({ player, isShowingDetail, setIsShowingDetail }: PropTypes) => {
@@ -18,7 +18,7 @@ const PlayerComponent = ({ player, isShowingDetail, setIsShowingDetail }: PropTy
       accessories={generatePlayerAccessories(player)}
       detail={
         <List.Item.Detail
-          markdown={`<img src="${player.headshot}" alt="drawing" width="250"/>`}
+          markdown={`<img src="${player.headshot}" alt="image" width="250"/>`}
           metadata={
             <List.Item.Detail.Metadata>
               <List.Item.Detail.Metadata.Label title="Name" text={player.fullName} />
