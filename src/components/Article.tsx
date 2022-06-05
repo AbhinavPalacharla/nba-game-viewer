@@ -21,7 +21,10 @@ const ArticleComponent = ({ article, isShowingDetail, setIsShowingDetail }: Prop
             <List.Item.Detail.Metadata>
               <List.Item.Detail.Metadata.Label title="Title" text={article.title} />
               <List.Item.Detail.Metadata.Separator />
-              <List.Item.Detail.Metadata.Label title="Date Published" text={article.publishedAt} />
+              <List.Item.Detail.Metadata.Label
+                title="Date Published"
+                text={`${new Date(article.publishedAt).toLocaleDateString()}`}
+              />
               <List.Item.Detail.Metadata.Separator />
               <List.Item.Detail.Metadata.Label title="Details" text={article.description} />
               <List.Item.Detail.Metadata.Separator />
