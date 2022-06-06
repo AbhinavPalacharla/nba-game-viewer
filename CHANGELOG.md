@@ -1,5 +1,10 @@
 # NBA Game Viewer Changelog
 
+## [New Feature] - 2022-06-05
+
+- New command to view NBA headlines / news
+- Notes: This is a little buggy because Raycast has trouble supporting larger text lengths. Will try and either find a workaround or wait for the bug to be fixed.
+
 ## [New Feature] - 2022-06-02
 
 - New Addition to celebrate the beginning of the NBA 2022 Finals 🎉
