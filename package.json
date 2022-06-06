@@ -25,9 +25,9 @@
       "mode": "view"
     },
     {
-      "name": "news",
-      "title": "View News",
-      "description": "Fetches NBA league news from ESPN",
+      "name": "headlines",
+      "title": "View Headlines",
+      "description": "Fetches NBA league headlines from ESPN",
       "subtitle": "NBA",
       "mode": "view"
     }
