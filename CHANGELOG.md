@@ -11,4 +11,8 @@
 - When viewing team standings you can now view the team's roster
 - When viewing roster you can view player injury status and see additonal information about each player
 
+## [Fix] - 2022-06-01
+
+- Fixed wrong day of the week being displayed on upcoming games.
+
 ## [Initial Version] - 2022-05-19
