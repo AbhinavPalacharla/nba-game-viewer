@@ -37,7 +37,8 @@ const ArticleComponent = ({ article, isShowingDetail, setIsShowingDetail }: Prop
           <Action
             title="Show Article Info"
             icon={Icon.Sidebar}
-            onAction={() => (isShowingDetail ? setIsShowingDetail(false) : setIsShowingDetail(true))}
+            shortcut={{ modifiers: ["cmd", "shift"], key: "d" }}
+            onAction={() => setIsShowingDetail(!isShowingDetail)}
           />
           <Action.OpenInBrowser url={article.url} title="View on ESPN" />
         </ActionPanel>

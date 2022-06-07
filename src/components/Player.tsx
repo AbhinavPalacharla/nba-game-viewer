@@ -47,7 +47,8 @@ const PlayerComponent = ({ player, isShowingDetail, setIsShowingDetail }: PropTy
           <Action
             title="Show Player Info"
             icon={Icon.Sidebar}
-            onAction={() => (isShowingDetail ? setIsShowingDetail(false) : setIsShowingDetail(true))}
+            shortcut={{ modifiers: ["cmd", "shift"], key: "d" }}
+            onAction={() => setIsShowingDetail(!isShowingDetail)}
           />
           <Action.OpenInBrowser title="View Player on ESPN" url={player.link} />
         </ActionPanel>
