@@ -1,4 +1,4 @@
-import { List, ActionPanel, Action, Icon } from "@raycast/api";
+import { Grid, ActionPanel, Action, Icon } from "@raycast/api";
 import { Team } from "../types/standings.types";
 import Roster from "../views/roster";
 
@@ -8,11 +8,12 @@ type PropTypes = {
 
 const TeamComponent = ({ team }: PropTypes) => {
   return (
-    <List.Item
+    <Grid.Item
       key={team.id}
       title={team.name}
-      icon={team.logo}
-      accessories={[{ text: `W: ${team.wins}` }, { text: `L: ${team.losses}` }]}
+      content={team.logo}
+      subtitle={`W: ${team.wins} • L: ${team.losses}`}
+      // accessories={[{ text: `W: ${team.wins}` }, { text: `L: ${team.losses}` }]}
       actions={
         <ActionPanel>
           <Action.Push title="View Roster" icon={Icon.Person} target={<Roster id={team.id} />} />

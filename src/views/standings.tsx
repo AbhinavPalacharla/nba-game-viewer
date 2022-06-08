@@ -1,4 +1,4 @@
-import { List, Toast, showToast } from "@raycast/api";
+import { Grid, Toast, showToast } from "@raycast/api";
 import { Team } from "../types/standings.types";
 import useStandings from "../hooks/useStandings";
 import TeamComponent from "../components/Team";
@@ -12,18 +12,18 @@ const Standings = () => {
   }
 
   return (
-    <List isLoading={data.loading}>
-      <List.Section title="Eastern Conference">
+    <Grid isLoading={data.loading} itemSize={Grid.ItemSize.Medium} inset={Grid.Inset.Medium}>
+      <Grid.Section title="Eastern Conference">
         {data.standings.eastern.map((team: Team) => {
           return <TeamComponent key={team.id} team={team} />;
         })}
-      </List.Section>
-      <List.Section title="Western Conference">
+      </Grid.Section>
+      <Grid.Section title="Western Conference">
         {data.standings.western.map((team: Team) => {
           return <TeamComponent key={team.id} team={team} />;
         })}
-      </List.Section>
-    </List>
+      </Grid.Section>
+    </Grid>
   );
 };
 
